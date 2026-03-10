@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: 'Public Sans', sans-serif;
+
+  --color-green-50: #EFFDF5;
+  --color-green-100: #D9FBE8;
+  --color-green-200: #B3F5D1;
+  --color-green-300: #75EDAE;
+  --color-green-400: #00DC82;
+  --color-green-500: #00C16A;
+  --color-green-600: #00A155;
+  --color-green-700: #007F45;
+  --color-green-800: #016538;
+  --color-green-900: #0A5331;
+  --color-green-950: #052E16;
+}
+
+/* AI-Logo：浅绿 + 白 */
+.ai-logo {
+  --ai-logo-primary: #0A5331;
+  --ai-logo-secondary: #B3F5D1;
+}
+.dark .ai-logo {
+  --ai-logo-primary: #B3F5D1;
+  --ai-logo-secondary: #ffffff;
+}
+
+/* Nuxt 挂载点：需占满高度，否则内部 flex 无法计算；其余布局用 Tailwind */
+#__nuxt {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
